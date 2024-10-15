@@ -1,0 +1,183 @@
+/* .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#heading{
+    margin-left: 40%;
+    
+    font-style: italic;
+}
+
+.canvas {
+    border: 2px solid black;
+}
+
+.top,
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+#clearButton{
+    background-color: rgb(100, 231, 225);
+}
+
+#saveButton{
+    background-color:rgb(240, 130, 130);
+}
+#retrieveButton{
+    background-color: rgb(100, 231, 150);
+}
+.block,
+input,
+select,
+button {
+    width: 80%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom>button {
+    margin: 10px;
+}
+
+.top>.block {
+    margin: 10px;
+}
+
+.block>p {
+    margin: 10px auto;
+    width: 50%;
+} */
+
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container styling */
+.main {
+    background-color: #ffffff;
+   
+    width: 900px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+#heading{
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+/* Top control panel styles */
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="color"], select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="color"]:hover, select:hover {
+    border-color: #333;
+}
+
+/* Canvas */
+canvas {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom buttons */
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Individual button styles */
+#clearButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#saveButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#retrieveButton {
+    background-color: #FFA500;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main {
+        width: 95%;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .block {
+        margin-bottom: 15px;
+    }
+}
